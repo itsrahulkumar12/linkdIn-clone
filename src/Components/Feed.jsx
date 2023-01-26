@@ -6,6 +6,7 @@ import InputOptions from './InputOptions';
 import ImageIcon from '@mui/icons-material/Image';
 import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
 import ArticleIcon from '@mui/icons-material/Article';
+import Post from './Post';
 
 const Feed = () => {
   return (
@@ -25,7 +26,14 @@ const Feed = () => {
                 <InputOptions Icon={ArticleIcon} title="Write article" color="#7fc15e"/>
             </div>
         </div>
-        {/* posts */}
+
+        {/* posts component */}
+        <Post 
+            name="Rahul Kumar"
+            description="This is the test description"
+            message="This is working and I am making clone"
+            />
+
     </div>
   )
 }
